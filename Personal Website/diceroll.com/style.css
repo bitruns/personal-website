@@ -1,0 +1,60 @@
+body{
+	text-align: center;
+	margin-top:0;
+	margin-left:0;
+	margin-right:0;
+	background-color:#335589;
+}
+
+#main_header{
+	color:white;
+	background-color:#5e87c4;
+	width:100%;
+	font-size:2;
+	margin-top:0;
+	padding-top:3vh;
+	padding-bottom: 3vh;
+	margin-bottom:4vh;
+}
+
+#amount_of_dice_selector{
+	width:50px
+}
+
+#diceRolling{
+	margin-top:2vh;
+	height:150px;
+}
+
+.diceImage{
+	border-radius: 5%;
+	margin:10px;
+	width:auto;
+	height:100%;
+	color-interpolation: 0 0 0;
+	object-fit: contain;
+	/*filter: blur(3px);
+        -webkit-filter: blur(10px);*/
+}
+
+#dice_type_label{
+	color:white;
+	font-weight: bold;
+	font-size: 1.75rem;
+}
+
+#amount_of_label{
+	font-weight: bold;
+	color:white;
+	font-size: 1.5rem;
+}
+#amount_of_dice_selector{
+	width:5em;
+}
+
+#return-button{
+	color:#FFF; 
+	margin:10px 10px;
+	font-size:20px;
+	top:0; left:0; position:absolute;
+}

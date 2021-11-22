@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src='mersenne-twister.js'></script>
+	<script type="text/javascript" src='script.js'></script>
+
+	<title>Roll The Dice</title>
+</head>
+<body onload="onLoad()">
+
+	<h1 id='main_header'>Roll The Dice</h1>
+	<a href="../index.html" id="return-button">Return to Portfolio Site</a>
+
+	<form>
+		<label id='dice_type_label'>Type of Dice: </label> 
+		<br><br>
+
+		<select id='dice_type' onchange="updateDiceType()"> 
+			<option value='Classical' selected="selected">Classical 6 Sided Dice</option>
+			<option value='Tetrahedral'>Tetrahedral 4 Sided Dice</option>
+		</select>
+		<br><br><br><br>
+
+		<label id='amount_of_label'></label>
+		<br><br>
+		<input onchange="updateDiceAmount()" type="number" id='amount_of_dice_selector' name='amount_of_dice' min='1' max='10'>
+		<br><br><br><br>
+		<button type="button" name="roll_dice" onclick="rollDice()" >Roll Dice</button>
+	</form>
+
+	<div id='diceRolling'>
+	</div>
+
+</body>
+</html>
